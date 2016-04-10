@@ -31,3 +31,7 @@ body{
 	position: relative;
 	bottom: 550px;
 }
+
+ul{
+	list-style-type: square;
+}
