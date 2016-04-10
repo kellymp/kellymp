@@ -43,3 +43,11 @@ h1,h2,h3{
 h1:hover, h2:hover, h3:hover{
 	color: red;
 }
+
+th{
+	text-decoration: underline;
+}
+
+tr:nth-child(even) {
+    background-color: #e6e6e6;
+}
