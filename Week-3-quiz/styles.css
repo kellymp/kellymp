@@ -35,3 +35,7 @@ body{
 ul{
 	list-style-type: square;
 }
+
+h1,h2,h3{
+	letter-spacing: 5px;
+}
