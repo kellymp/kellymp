@@ -1,6 +1,14 @@
-body{
-	font: arial;
+*{
+	font: helvetica;
 	font-size: 20px;
-	background: yellow;
+	background-color: #ccffff;
+}
 
+#important{
+	background-color: #ccffff;
+	border: 1px dashed #ff6699;
+}
+
+.first{
+	border: 1px black solid;
 }
