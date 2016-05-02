@@ -8,10 +8,27 @@
   # print the list to the console [can you use one of your other methods here?]
 # output: hash
 
+def grocery_items(items)
+	grocery_items = items.split(' ')
+	grocery_list = { }
+	# set each item's quantity to one and adding it to the grocery list hash
+	grocery_items.each do |item|
+		grocery_list[item] = 1
+	end
+	p grocery_list
+end
+
+grocery_items("carrots apples cereal pizza")
+
+
 # Method to add an item to a list
 # input: item name and optional quantity
 # steps: set a new key with its value to the hash
 # output: print the grocery list hash with the new item 
+
+def add_item(item, quantity)
+		grocery_list[item] = quantity
+
 
 # Method to remove an item from the list
 # input: key the user wants to remove
