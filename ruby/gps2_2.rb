@@ -1,24 +1,37 @@
 # Method to create a list
 # input: string of items separated by spaces (example: "carrots apples cereal pizza")
 # steps: 
-  # define the grocery list string 
-  # take the string and split it into each item using .split(' ')
-  # set each food item as the keys in a hash
-  # set default quantity for each item 
-  # print the list to the console [can you use one of your other methods here?]
+ # define the grocery list string 
+ # take the string and split it into each item using .split(' ')
+ # set each food item as the keys in a hash
+ # set default quantity for each item 
+ # print the list to the console [can you use one of your other methods here?]
 # output: hash
 
 def grocery_items(items)
-	grocery_items = items.split(' ')
-	grocery_list = { }
-	# set each item's quantity to one and adding it to the grocery list hash
-	grocery_items.each do |item|
-		grocery_list[item] = 1
-	end
-	p grocery_list
+    grocery_items = items.split(' ')
+    grocery_list = { }
+    # set each item's quantity to one and adding it to the grocery list hash
+    grocery_items.each do |item|
+        grocery_list[item] = 1
+    end
+    p grocery_list
 end
 
-grocery_items("carrots apples cereal pizza")
+list = grocery_items("carrots apples cereal pizza")
+
+
+# Method to add an item to a list
+# input: item name and optional quantity
+# steps: set a new key with its value to the hash
+# output: print the grocery list hash with the new item
+
+def add_item(list, item)
+        list[item] = 1
+        p list
+end
+
+add_item(list, "banana")
 
 
 # Method to add an item to a list
@@ -26,8 +39,11 @@ grocery_items("carrots apples cereal pizza")
 # steps: set a new key with its value to the hash
 # output: print the grocery list hash with the new item 
 
-def add_item(item, quantity)
-		grocery_list[item] = quantity
+#def add_item(item, quantity)
+#		grocery_items[:item] = quantity
+#end
+
+#add_item("banana", 6)
 
 
 # Method to remove an item from the list
